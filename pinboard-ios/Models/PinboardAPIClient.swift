@@ -5,7 +5,7 @@ class PinboardAPIClient {
     private let baseURL = URL(string: "https://api.pinboard.in")!
 
     private lazy var teapot: Teapot = {
-        return Teapot(baseURL: self.baseURL)
+        Teapot(baseURL: self.baseURL)
     }()
 
     let shared = PinboardAPIClient()
