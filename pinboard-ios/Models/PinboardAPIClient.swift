@@ -1,5 +1,6 @@
 import Foundation
 import Teapot
+import KeychainSwift
 
 class PinboardAPIClient {
     private let baseURL = URL(string: "https://api.pinboard.in")!
@@ -8,17 +9,95 @@ class PinboardAPIClient {
         Teapot(baseURL: self.baseURL)
     }()
 
-    let shared = PinboardAPIClient()
-
-    func getAPIToken() {
-        self.teapot.get("/v1/user/api_token/") { result in
-            print(result)
+    var authToken: String? {
+        set {
+            let keychain = KeychainSwift(keyPrefix: "pinboard::")
+            if let token = newValue {
+                keychain.set(token, forKey: "authToken")
+            } else {
+                keychain.delete("authToken")
+            }
+        }
+        get {
+            let keychain = KeychainSwift(keyPrefix: "pinboard::")
+            return keychain.get("authToken")
         }
     }
 
-    func recent() {
-        self.teapot.get("/v1/posts/recent?format=json") { result in
-            print(result)
+    var username: String? {
+        set {
+            let keychain = KeychainSwift(keyPrefix: "pinboard::")
+            if let token = newValue {
+                keychain.set(token, forKey: "username")
+            } else {
+                keychain.delete("username")
+            }
+        }
+        get {
+            let keychain = KeychainSwift(keyPrefix: "pinboard::")
+            return keychain.get("username")
+        }
+    }
+
+    public static let shared: PinboardAPIClient = PinboardAPIClient()
+
+    init() {
+        // Uncomment to delete user
+        // KeychainSwift(keyPrefix: "pinboard::").delete("authToken")
+        // KeychainSwift(keyPrefix: "pinboard::").delete("username")
+    }
+
+    private func jsonPath(for path: String) -> String {
+        return path.appending("?format=json")
+    }
+
+    private func authenticatedPath(for path: String) -> String {
+        guard let username = self.username, let authToken = self.authToken else {
+            fatalError("Could not retrieve username and/or authToken.")
+        }
+
+        return self.jsonPath(for: path).appending("&auth_token=\(username):\(authToken)")
+    }
+
+    func getAPIToken(username: String, password: String, _ completion: @escaping (_ token: String?) -> Void) {
+        let path = self.jsonPath(for: "/v1/user/api_token/")
+        let header = self.teapot.basicAuthenticationHeader(username: username, password: password)
+
+        self.teapot.get(path, headerFields: header) { result in
+            switch result {
+            case let .success(params, response):
+                let token = params?.dictionary?["result"] as? String
+
+                self.username = username
+                completion(token)
+            case let .failure(params, response, error):
+                completion(nil)
+            }
+        }
+    }
+
+    func getRecent(_ completion: @escaping (_ recent: [Post]) -> Void) {
+        let path = self.authenticatedPath(for: "/v1/posts/recent")
+
+        self.teapot.get(path) { result in
+            switch result {
+            case let .success(params, response):
+                guard let postsArray = params?.dictionary?["posts"] as? [[String: Any]] else { return }
+                let decoder = JSONDecoder()
+
+                let posts = postsArray.flatMap { post -> Post? in
+                    let data = try! JSONSerialization.data(withJSONObject: post)
+                    let post = try! decoder.decode(Post.self, from: data)
+
+                    return post
+                }
+
+                DispatchQueue.main.async {
+                    completion(posts)
+                }
+            case let .failure(params, response, error):
+                break
+            }
         }
     }
 }

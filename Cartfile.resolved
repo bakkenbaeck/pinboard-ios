@@ -1,4 +1,5 @@
 github "UseSweet/SweetFoundation" "1.2.1"
-github "UseSweet/SweetSwift" "388d1e8e7ec47dd2f8c3635b158264918e05437b"
+github "UseSweet/SweetSwift" "2def6d1c332e78f6110ebf299214358976be9817"
 github "UseSweet/SweetUIKit" "474f69d4e5fc5af7279e6677e7a7281f4223e79e"
 github "bakkenbaeck/Teapot" "1.3.0"
+github "marketplacer/keychain-swift" "7.0.1"

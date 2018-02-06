@@ -1,12 +1,5 @@
-//
-//  pinboard_iosTests.swift
-//  pinboard-iosTests
-//
-//  Created by Igor Ranieri on 06.02.18.
-//  Copyright © 2018 Bakken & Bæck. All rights reserved.
-//
-
 import XCTest
+import SweetSwift
 @testable import pinboard_ios
 
 class pinboard_iosTests: XCTestCase {
@@ -21,16 +14,12 @@ class pinboard_iosTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    func testFonts() {
+        // Ensure fonts exist.
+        20.times { i in
+            let size = CGFloat(i + 5)
+            XCTAssertNotNil(UIFont.avenirBook(size: size))
+            XCTAssertNotNil(UIFont.avenirHeavy(size: size))
         }
     }
-    
 }
