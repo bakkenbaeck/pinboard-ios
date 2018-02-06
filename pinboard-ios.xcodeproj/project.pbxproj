@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F7AC5C22029B7A500D4D2E4 /* PinboardAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7AC5C12029B7A500D4D2E4 /* PinboardAPIClient.swift */; };
+		9F7AC5C42029B99900D4D2E4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7AC5C32029B99900D4D2E4 /* LoginViewController.swift */; };
 		9FF7F7B62029B36200FA8500 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF7F7B52029B36200FA8500 /* AppDelegate.swift */; };
 		9FF7F7B92029B36200FA8500 /* pinboard_ios.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9FF7F7B72029B36200FA8500 /* pinboard_ios.xcdatamodeld */; };
 		9FF7F7BB2029B36200FA8500 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF7F7BA2029B36200FA8500 /* MasterViewController.swift */; };
@@ -15,6 +17,10 @@
 		9FF7F7C22029B36200FA8500 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FF7F7C12029B36200FA8500 /* Assets.xcassets */; };
 		9FF7F7C52029B36200FA8500 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FF7F7C32029B36200FA8500 /* LaunchScreen.storyboard */; };
 		9FF7F7D02029B36200FA8500 /* pinboard_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF7F7CF2029B36200FA8500 /* pinboard_iosTests.swift */; };
+		9FF7F7E02029B6BD00FA8500 /* Teapot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF7F7DC2029B6BD00FA8500 /* Teapot.framework */; };
+		9FF7F7E12029B6BD00FA8500 /* SweetFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF7F7DD2029B6BD00FA8500 /* SweetFoundation.framework */; };
+		9FF7F7E22029B6BD00FA8500 /* SweetSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF7F7DE2029B6BD00FA8500 /* SweetSwift.framework */; };
+		9FF7F7E32029B6BD00FA8500 /* SweetUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF7F7DF2029B6BD00FA8500 /* SweetUIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +34,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9F7AC5C12029B7A500D4D2E4 /* PinboardAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinboardAPIClient.swift; sourceTree = "<group>"; };
+		9F7AC5C32029B99900D4D2E4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9FF7F7B22029B36200FA8500 /* pinboard-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "pinboard-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FF7F7B52029B36200FA8500 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FF7F7B82029B36200FA8500 /* pinboard_ios.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = pinboard_ios.xcdatamodel; sourceTree = "<group>"; };
@@ -40,6 +48,10 @@
 		9FF7F7CB2029B36200FA8500 /* pinboard-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "pinboard-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FF7F7CF2029B36200FA8500 /* pinboard_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pinboard_iosTests.swift; sourceTree = "<group>"; };
 		9FF7F7D12029B36200FA8500 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FF7F7DC2029B6BD00FA8500 /* Teapot.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Teapot.framework; path = Carthage/Build/iOS/Teapot.framework; sourceTree = SOURCE_ROOT; };
+		9FF7F7DD2029B6BD00FA8500 /* SweetFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SweetFoundation.framework; path = Carthage/Build/iOS/SweetFoundation.framework; sourceTree = SOURCE_ROOT; };
+		9FF7F7DE2029B6BD00FA8500 /* SweetSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SweetSwift.framework; path = Carthage/Build/iOS/SweetSwift.framework; sourceTree = SOURCE_ROOT; };
+		9FF7F7DF2029B6BD00FA8500 /* SweetUIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SweetUIKit.framework; path = Carthage/Build/iOS/SweetUIKit.framework; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +59,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FF7F7E12029B6BD00FA8500 /* SweetFoundation.framework in Frameworks */,
+				9FF7F7E02029B6BD00FA8500 /* Teapot.framework in Frameworks */,
+				9FF7F7E32029B6BD00FA8500 /* SweetUIKit.framework in Frameworks */,
+				9FF7F7E22029B6BD00FA8500 /* SweetSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +76,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9F7AC5C02029B79000D4D2E4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9F7AC5C12029B7A500D4D2E4 /* PinboardAPIClient.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		9FF7F7A92029B36200FA8500 = {
 			isa = PBXGroup;
 			children = (
@@ -81,14 +105,13 @@
 		9FF7F7B42029B36200FA8500 /* pinboard-ios */ = {
 			isa = PBXGroup;
 			children = (
+				9F7AC5C02029B79000D4D2E4 /* Models */,
 				9FF7F7B52029B36200FA8500 /* AppDelegate.swift */,
+				9F7AC5C32029B99900D4D2E4 /* LoginViewController.swift */,
 				9FF7F7BA2029B36200FA8500 /* MasterViewController.swift */,
 				9FF7F7BC2029B36200FA8500 /* DetailViewController.swift */,
-				9FF7F7BE2029B36200FA8500 /* Main.storyboard */,
-				9FF7F7C12029B36200FA8500 /* Assets.xcassets */,
-				9FF7F7C32029B36200FA8500 /* LaunchScreen.storyboard */,
-				9FF7F7C62029B36200FA8500 /* Info.plist */,
-				9FF7F7B72029B36200FA8500 /* pinboard_ios.xcdatamodeld */,
+				9FF7F7DB2029B6B400FA8500 /* Frameworks */,
+				9FF7F7DA2029B6AB00FA8500 /* Resources */,
 			);
 			path = "pinboard-ios";
 			sourceTree = "<group>";
@@ -102,6 +125,29 @@
 			path = "pinboard-iosTests";
 			sourceTree = "<group>";
 		};
+		9FF7F7DA2029B6AB00FA8500 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9FF7F7BE2029B36200FA8500 /* Main.storyboard */,
+				9FF7F7C12029B36200FA8500 /* Assets.xcassets */,
+				9FF7F7C32029B36200FA8500 /* LaunchScreen.storyboard */,
+				9FF7F7C62029B36200FA8500 /* Info.plist */,
+				9FF7F7B72029B36200FA8500 /* pinboard_ios.xcdatamodeld */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9FF7F7DB2029B6B400FA8500 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9FF7F7DD2029B6BD00FA8500 /* SweetFoundation.framework */,
+				9FF7F7DE2029B6BD00FA8500 /* SweetSwift.framework */,
+				9FF7F7DF2029B6BD00FA8500 /* SweetUIKit.framework */,
+				9FF7F7DC2029B6BD00FA8500 /* Teapot.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -112,6 +158,7 @@
 				9FF7F7AE2029B36200FA8500 /* Sources */,
 				9FF7F7AF2029B36200FA8500 /* Frameworks */,
 				9FF7F7B02029B36200FA8500 /* Resources */,
+				9FF7F7E42029B6C500FA8500 /* Carthage copy frameworks */,
 			);
 			buildRules = (
 			);
@@ -200,12 +247,35 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9FF7F7E42029B6C500FA8500 /* Carthage copy frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Teapot.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SweetUIKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SweetSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SweetFoundation.framework",
+			);
+			name = "Carthage copy frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks ";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9FF7F7AE2029B36200FA8500 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F7AC5C42029B99900D4D2E4 /* LoginViewController.swift in Sources */,
 				9FF7F7B92029B36200FA8500 /* pinboard_ios.xcdatamodeld in Sources */,
+				9F7AC5C22029B7A500D4D2E4 /* PinboardAPIClient.swift in Sources */,
 				9FF7F7B62029B36200FA8500 /* AppDelegate.swift in Sources */,
 				9FF7F7BB2029B36200FA8500 /* MasterViewController.swift in Sources */,
 				9FF7F7BD2029B36200FA8500 /* DetailViewController.swift in Sources */,
@@ -363,12 +433,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 29X3GG489T;
-				INFOPLIST_FILE = "pinboard-ios/Info.plist";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "pinboard-ios/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "no.bakkenbaeck.pinboard-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -378,12 +452,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 29X3GG489T;
-				INFOPLIST_FILE = "pinboard-ios/Info.plist";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "pinboard-ios/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "no.bakkenbaeck.pinboard-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

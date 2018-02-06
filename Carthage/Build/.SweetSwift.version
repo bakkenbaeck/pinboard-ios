@@ -1,0 +1,9 @@
+{
+  "commitish" : "388d1e8e7ec47dd2f8c3635b158264918e05437b",
+  "iOS" : [
+    {
+      "name" : "SweetSwift",
+      "hash" : "1448ca674fcdb5965e7672eb826d0b6a9d032a2d1f07ff4d2cd2bf2e64c1f58b"
+    }
+  ]
+}

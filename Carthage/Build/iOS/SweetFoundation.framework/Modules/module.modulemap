@@ -1,0 +1,11 @@
+framework module SweetFoundation {
+  umbrella header "SweetFoundation.h"
+
+  export *
+  module * { export * }
+}
+
+module SweetFoundation.Swift {
+    header "SweetFoundation-Swift.h"
+    requires objc
+}

@@ -1,0 +1,9 @@
+{
+  "commitish" : "1.2.1",
+  "iOS" : [
+    {
+      "name" : "SweetFoundation",
+      "hash" : "fed1c44f094dfdc38333d05709af30ae6e2e9817fa0862cd9a004c2ed0cb468e"
+    }
+  ]
+}

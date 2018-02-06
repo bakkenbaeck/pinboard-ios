@@ -1,0 +1,4 @@
+framework module Teapot {
+    header "Teapot-Swift.h"
+    requires objc
+}

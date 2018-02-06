@@ -1,0 +1,9 @@
+{
+  "commitish" : "474f69d4e5fc5af7279e6677e7a7281f4223e79e",
+  "iOS" : [
+    {
+      "name" : "SweetUIKit",
+      "hash" : "a0755463c4c5b9980374e25f626b54b5914cc0edbcb334091a610bb5ea6f935d"
+    }
+  ]
+}

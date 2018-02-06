@@ -1,0 +1,647 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9F1D8B751E89522B00EF8DEE /* Teapot+iOSMultipartDataForImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1D8B741E89522B00EF8DEE /* Teapot+iOSMultipartDataForImage.swift */; };
+		9F2C23601FE8034100644152 /* Teapot+BasicAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2C235F1FE8034100644152 /* Teapot+BasicAuth.swift */; };
+		9F2C23611FE8034100644152 /* Teapot+BasicAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2C235F1FE8034100644152 /* Teapot+BasicAuth.swift */; };
+		9F2C23631FE8078000644152 /* BasicAuthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2C23621FE8078000644152 /* BasicAuthTests.swift */; };
+		9F6AE9B11F9767F2009D56C7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9F6AE9B01F9767F2009D56C7 /* Localizable.strings */; };
+		9F6AE9B21F9767F2009D56C7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9F6AE9B01F9767F2009D56C7 /* Localizable.strings */; };
+		9F7B896F1E51DA62009C192E /* Teapot+Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7B896E1E51DA62009C192E /* Teapot+Images.swift */; };
+		9F7B89701E51DCC6009C192E /* Teapot+Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7B896E1E51DA62009C192E /* Teapot+Images.swift */; };
+		9F7B89741E51E098009C192E /* app-draw-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F7B89711E51E03C009C192E /* app-draw-icon.png */; };
+		9FB36EA41E7BE95900DB6F86 /* ResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB36EA31E7BE95900DB6F86 /* ResponseTests.swift */; };
+		9FBCA1081F9DD17900BFDF47 /* TeapotError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBCA1071F9DD17900BFDF47 /* TeapotError.swift */; };
+		9FBCA1091F9DD17900BFDF47 /* TeapotError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBCA1071F9DD17900BFDF47 /* TeapotError.swift */; };
+		9FED00D11E3A4EDA009A54B4 /* TeapotMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FED00C71E3A4EDA009A54B4 /* TeapotMac.framework */; };
+		9FED00D61E3A4EDA009A54B4 /* TeapotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FED00D51E3A4EDA009A54B4 /* TeapotTests.swift */; };
+		9FED00D81E3A4EDA009A54B4 /* Teapot.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FED00CA1E3A4EDA009A54B4 /* Teapot.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9FED01011E3A4FF6009A54B4 /* RequestParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FED00FE1E3A4FF6009A54B4 /* RequestParameter.swift */; };
+		9FED01021E3A4FF6009A54B4 /* RequestParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FED00FE1E3A4FF6009A54B4 /* RequestParameter.swift */; };
+		9FED01031E3A4FF6009A54B4 /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FED00FF1E3A4FF6009A54B4 /* NetworkResult.swift */; };
+		9FED01041E3A4FF6009A54B4 /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FED00FF1E3A4FF6009A54B4 /* NetworkResult.swift */; };
+		9FED01051E3A4FF6009A54B4 /* Teapot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FED01001E3A4FF6009A54B4 /* Teapot.swift */; };
+		9FED01061E3A4FF6009A54B4 /* Teapot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FED01001E3A4FF6009A54B4 /* Teapot.swift */; };
+		D197B06C934A836E5ACAD940 /* MockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D197BA0495D1052C8D29FD8A /* MockTests.swift */; };
+		D197B0D7CB2FEC9B6B4BD7F1 /* overridden.json in Resources */ = {isa = PBXBuildFile; fileRef = D197BCF4092AC0C96E78327E /* overridden.json */; };
+		D197B130B579FEBF404A20F7 /* MockTeapot.swift in Sources */ = {isa = PBXBuildFile; fileRef = D197B195CEC87D0FA798B47B /* MockTeapot.swift */; };
+		D197B176D5E1568F54764698 /* MockTeapot.swift in Sources */ = {isa = PBXBuildFile; fileRef = D197B195CEC87D0FA798B47B /* MockTeapot.swift */; };
+		D197B2358CF8B04E00973931 /* invalid.json in Resources */ = {isa = PBXBuildFile; fileRef = D197B578CBCD1E73B2CAD236 /* invalid.json */; };
+		D197B9D5F301287A537FE091 /* get.json in Resources */ = {isa = PBXBuildFile; fileRef = D197B92809E03181E7EF7AA1 /* get.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9FED00D21E3A4EDA009A54B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9FED00BE1E3A4ED9009A54B4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9FED00C61E3A4EDA009A54B4;
+			remoteInfo = Teapot;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9F1D8B741E89522B00EF8DEE /* Teapot+iOSMultipartDataForImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Teapot+iOSMultipartDataForImage.swift"; sourceTree = "<group>"; };
+		9F2C235F1FE8034100644152 /* Teapot+BasicAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Teapot+BasicAuth.swift"; sourceTree = "<group>"; };
+		9F2C23621FE8078000644152 /* BasicAuthTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicAuthTests.swift; sourceTree = "<group>"; };
+		9F6AE9B01F9767F2009D56C7 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		9F7B896E1E51DA62009C192E /* Teapot+Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Teapot+Images.swift"; sourceTree = "<group>"; };
+		9F7B89711E51E03C009C192E /* app-draw-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app-draw-icon.png"; sourceTree = "<group>"; };
+		9FB36EA31E7BE95900DB6F86 /* ResponseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseTests.swift; sourceTree = "<group>"; };
+		9FBCA1071F9DD17900BFDF47 /* TeapotError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeapotError.swift; sourceTree = "<group>"; };
+		9FED00C71E3A4EDA009A54B4 /* TeapotMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TeapotMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FED00CA1E3A4EDA009A54B4 /* Teapot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Teapot.h; sourceTree = "<group>"; };
+		9FED00CB1E3A4EDA009A54B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FED00D01E3A4EDA009A54B4 /* TeapotMacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TeapotMacTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FED00D51E3A4EDA009A54B4 /* TeapotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeapotTests.swift; sourceTree = "<group>"; };
+		9FED00D71E3A4EDA009A54B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FED00E71E3A4F2E009A54B4 /* Teapot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Teapot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FED00FE1E3A4FF6009A54B4 /* RequestParameter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestParameter.swift; sourceTree = "<group>"; };
+		9FED00FF1E3A4FF6009A54B4 /* NetworkResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
+		9FED01001E3A4FF6009A54B4 /* Teapot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Teapot.swift; sourceTree = "<group>"; };
+		D197B195CEC87D0FA798B47B /* MockTeapot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockTeapot.swift; sourceTree = "<group>"; };
+		D197B578CBCD1E73B2CAD236 /* invalid.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = invalid.json; sourceTree = "<group>"; };
+		D197B92809E03181E7EF7AA1 /* get.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = get.json; sourceTree = "<group>"; };
+		D197BA0495D1052C8D29FD8A /* MockTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockTests.swift; sourceTree = "<group>"; };
+		D197BCF4092AC0C96E78327E /* overridden.json */ = {isa = PBXFileReference; fileEncoding = 1; lastKnownFileType = text.json; path = overridden.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9FED00C31E3A4EDA009A54B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FED00CD1E3A4EDA009A54B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FED00D11E3A4EDA009A54B4 /* TeapotMac.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FED00E31E3A4F2E009A54B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9FED00BD1E3A4ED9009A54B4 = {
+			isa = PBXGroup;
+			children = (
+				9FED00C91E3A4EDA009A54B4 /* Teapot */,
+				9FED00D41E3A4EDA009A54B4 /* TeapotTests */,
+				9FED00C81E3A4EDA009A54B4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9FED00C81E3A4EDA009A54B4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9FED00C71E3A4EDA009A54B4 /* TeapotMac.framework */,
+				9FED00D01E3A4EDA009A54B4 /* TeapotMacTests.xctest */,
+				9FED00E71E3A4F2E009A54B4 /* Teapot.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9FED00C91E3A4EDA009A54B4 /* Teapot */ = {
+			isa = PBXGroup;
+			children = (
+				9FED00FE1E3A4FF6009A54B4 /* RequestParameter.swift */,
+				9FED00FF1E3A4FF6009A54B4 /* NetworkResult.swift */,
+				9FED01001E3A4FF6009A54B4 /* Teapot.swift */,
+				9F2C235F1FE8034100644152 /* Teapot+BasicAuth.swift */,
+				9FBCA1071F9DD17900BFDF47 /* TeapotError.swift */,
+				9F7B896E1E51DA62009C192E /* Teapot+Images.swift */,
+				9F1D8B741E89522B00EF8DEE /* Teapot+iOSMultipartDataForImage.swift */,
+				D197B195CEC87D0FA798B47B /* MockTeapot.swift */,
+				9FED00E11E3A4F10009A54B4 /* Resources */,
+			);
+			path = Teapot;
+			sourceTree = "<group>";
+		};
+		9FED00D41E3A4EDA009A54B4 /* TeapotTests */ = {
+			isa = PBXGroup;
+			children = (
+				9F7B89711E51E03C009C192E /* app-draw-icon.png */,
+				9FED00D51E3A4EDA009A54B4 /* TeapotTests.swift */,
+				9FB36EA31E7BE95900DB6F86 /* ResponseTests.swift */,
+				9F2C23621FE8078000644152 /* BasicAuthTests.swift */,
+				9FED00D71E3A4EDA009A54B4 /* Info.plist */,
+				D197BA0495D1052C8D29FD8A /* MockTests.swift */,
+				D197B92809E03181E7EF7AA1 /* get.json */,
+				D197B578CBCD1E73B2CAD236 /* invalid.json */,
+				D197BCF4092AC0C96E78327E /* overridden.json */,
+			);
+			path = TeapotTests;
+			sourceTree = "<group>";
+		};
+		9FED00E11E3A4F10009A54B4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9FED00CA1E3A4EDA009A54B4 /* Teapot.h */,
+				9FED00CB1E3A4EDA009A54B4 /* Info.plist */,
+				9F6AE9B01F9767F2009D56C7 /* Localizable.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		9FED00C41E3A4EDA009A54B4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FED00D81E3A4EDA009A54B4 /* Teapot.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FED00E41E3A4F2E009A54B4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		9FED00C61E3A4EDA009A54B4 /* TeapotMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FED00DB1E3A4EDA009A54B4 /* Build configuration list for PBXNativeTarget "TeapotMac" */;
+			buildPhases = (
+				9FED00C21E3A4EDA009A54B4 /* Sources */,
+				9FED00C31E3A4EDA009A54B4 /* Frameworks */,
+				9FED00C41E3A4EDA009A54B4 /* Headers */,
+				9FED00C51E3A4EDA009A54B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TeapotMac;
+			productName = Teapot;
+			productReference = 9FED00C71E3A4EDA009A54B4 /* TeapotMac.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9FED00CF1E3A4EDA009A54B4 /* TeapotMacTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FED00DE1E3A4EDA009A54B4 /* Build configuration list for PBXNativeTarget "TeapotMacTests" */;
+			buildPhases = (
+				9FED00CC1E3A4EDA009A54B4 /* Sources */,
+				9FED00CD1E3A4EDA009A54B4 /* Frameworks */,
+				9FED00CE1E3A4EDA009A54B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9FED00D31E3A4EDA009A54B4 /* PBXTargetDependency */,
+			);
+			name = TeapotMacTests;
+			productName = TeapotTests;
+			productReference = 9FED00D01E3A4EDA009A54B4 /* TeapotMacTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9FED00E61E3A4F2E009A54B4 /* Teapot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FED00F81E3A4F2E009A54B4 /* Build configuration list for PBXNativeTarget "Teapot" */;
+			buildPhases = (
+				9FED00E21E3A4F2E009A54B4 /* Sources */,
+				9FED00E31E3A4F2E009A54B4 /* Frameworks */,
+				9FED00E41E3A4F2E009A54B4 /* Headers */,
+				9FED00E51E3A4F2E009A54B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Teapot;
+			productName = Teapot;
+			productReference = 9FED00E71E3A4F2E009A54B4 /* Teapot.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9FED00BE1E3A4ED9009A54B4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "B&B";
+				TargetAttributes = {
+					9FED00C61E3A4EDA009A54B4 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 29X3GG489T;
+						LastSwiftMigration = 0910;
+						ProvisioningStyle = Automatic;
+					};
+					9FED00CF1E3A4EDA009A54B4 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 29X3GG489T;
+						LastSwiftMigration = 0910;
+						ProvisioningStyle = Automatic;
+					};
+					9FED00E61E3A4F2E009A54B4 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 29X3GG489T;
+						LastSwiftMigration = 0910;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 9FED00C11E3A4ED9009A54B4 /* Build configuration list for PBXProject "Teapot" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9FED00BD1E3A4ED9009A54B4;
+			productRefGroup = 9FED00C81E3A4EDA009A54B4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9FED00C61E3A4EDA009A54B4 /* TeapotMac */,
+				9FED00CF1E3A4EDA009A54B4 /* TeapotMacTests */,
+				9FED00E61E3A4F2E009A54B4 /* Teapot */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9FED00C51E3A4EDA009A54B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F6AE9B11F9767F2009D56C7 /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FED00CE1E3A4EDA009A54B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F7B89741E51E098009C192E /* app-draw-icon.png in Resources */,
+				D197B9D5F301287A537FE091 /* get.json in Resources */,
+				D197B2358CF8B04E00973931 /* invalid.json in Resources */,
+				D197B0D7CB2FEC9B6B4BD7F1 /* overridden.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FED00E51E3A4F2E009A54B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F6AE9B21F9767F2009D56C7 /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9FED00C21E3A4EDA009A54B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F7B89701E51DCC6009C192E /* Teapot+Images.swift in Sources */,
+				9FED01011E3A4FF6009A54B4 /* RequestParameter.swift in Sources */,
+				9FED01031E3A4FF6009A54B4 /* NetworkResult.swift in Sources */,
+				9FBCA1081F9DD17900BFDF47 /* TeapotError.swift in Sources */,
+				9F2C23601FE8034100644152 /* Teapot+BasicAuth.swift in Sources */,
+				9FED01051E3A4FF6009A54B4 /* Teapot.swift in Sources */,
+				D197B176D5E1568F54764698 /* MockTeapot.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FED00CC1E3A4EDA009A54B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FED00D61E3A4EDA009A54B4 /* TeapotTests.swift in Sources */,
+				9FB36EA41E7BE95900DB6F86 /* ResponseTests.swift in Sources */,
+				9F2C23631FE8078000644152 /* BasicAuthTests.swift in Sources */,
+				D197B06C934A836E5ACAD940 /* MockTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FED00E21E3A4F2E009A54B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F7B896F1E51DA62009C192E /* Teapot+Images.swift in Sources */,
+				9FBCA1091F9DD17900BFDF47 /* TeapotError.swift in Sources */,
+				9FED01021E3A4FF6009A54B4 /* RequestParameter.swift in Sources */,
+				9FED01041E3A4FF6009A54B4 /* NetworkResult.swift in Sources */,
+				9F1D8B751E89522B00EF8DEE /* Teapot+iOSMultipartDataForImage.swift in Sources */,
+				9F2C23611FE8034100644152 /* Teapot+BasicAuth.swift in Sources */,
+				9FED01061E3A4FF6009A54B4 /* Teapot.swift in Sources */,
+				D197B130B579FEBF404A20F7 /* MockTeapot.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9FED00D31E3A4EDA009A54B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9FED00C61E3A4EDA009A54B4 /* TeapotMac */;
+			targetProxy = 9FED00D21E3A4EDA009A54B4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		9FED00D91E3A4EDA009A54B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9FED00DA1E3A4EDA009A54B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9FED00DC1E3A4EDA009A54B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 29X3GG489T;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = Teapot/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = no.bakkenbaeck.Teapot;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		9FED00DD1E3A4EDA009A54B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 29X3GG489T;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = Teapot/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = no.bakkenbaeck.Teapot;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		9FED00DF1E3A4EDA009A54B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 29X3GG489T;
+				INFOPLIST_FILE = TeapotTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = no.bakkenbaeck.TeapotTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		9FED00E01E3A4EDA009A54B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 29X3GG489T;
+				INFOPLIST_FILE = TeapotTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = no.bakkenbaeck.TeapotTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		9FED00F91E3A4F2E009A54B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 29X3GG489T;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Teapot/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = no.bakkenbaeck.Teapot;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9FED00FA1E3A4F2E009A54B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 29X3GG489T;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Teapot/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = no.bakkenbaeck.Teapot;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9FED00C11E3A4ED9009A54B4 /* Build configuration list for PBXProject "Teapot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FED00D91E3A4EDA009A54B4 /* Debug */,
+				9FED00DA1E3A4EDA009A54B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9FED00DB1E3A4EDA009A54B4 /* Build configuration list for PBXNativeTarget "TeapotMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FED00DC1E3A4EDA009A54B4 /* Debug */,
+				9FED00DD1E3A4EDA009A54B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9FED00DE1E3A4EDA009A54B4 /* Build configuration list for PBXNativeTarget "TeapotMacTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FED00DF1E3A4EDA009A54B4 /* Debug */,
+				9FED00E01E3A4EDA009A54B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9FED00F81E3A4F2E009A54B4 /* Build configuration list for PBXNativeTarget "Teapot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FED00F91E3A4F2E009A54B4 /* Debug */,
+				9FED00FA1E3A4F2E009A54B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9FED00BE1E3A4ED9009A54B4 /* Project object */;
+}

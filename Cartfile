@@ -1,0 +1,4 @@
+github "bakkenbaeck/Teapot" ~> 1.3.0
+github "UseSweet/SweetFoundation" ~> 1.2.0
+github "UseSweet/SweetSwift" "master"
+github "UseSweet/SweetUIKit" "master"
