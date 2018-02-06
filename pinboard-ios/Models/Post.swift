@@ -1,17 +1,9 @@
 import Foundation
+import CoreData
 
-struct Post: Codable {
-    let tags: String
-    let path: String
-    let extended: String
-    let meta: String
-    let description: String
-    let hash: String
-    let time: String
-    let toRead: String
-    let shared: String
-
-    enum CodingKeys : String, CodingKey {
+@objc(Post)
+public class Post: NSManagedObject {
+    enum Keys: String {
         case tags
         case path = "href"
         case extended
@@ -21,5 +13,20 @@ struct Post: Codable {
         case time
         case toRead = "toread"
         case shared
+    }
+
+    convenience init(json: [String: String], context: NSManagedObjectContext) {
+        let entity = NSEntityDescription.entity(forEntityName: "Post", in: context)!
+        self.init(entity: entity, insertInto: context)
+
+        self.tags = json[Keys.tags.rawValue]
+        self.path = json[Keys.path.rawValue]
+        self.extended = json[Keys.extended.rawValue]
+        self.meta = json[Keys.meta.rawValue]
+        self.postDescription = json[Keys.description.rawValue]
+        self.postHash = json[Keys.hash.rawValue]
+        self.time = json[Keys.time.rawValue]
+        self.toRead = json[Keys.toRead.rawValue]
+        self.shared = json[Keys.shared.rawValue]
     }
 }

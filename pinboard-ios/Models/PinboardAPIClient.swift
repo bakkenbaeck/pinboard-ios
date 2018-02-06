@@ -82,19 +82,32 @@ class PinboardAPIClient {
         self.teapot.get(path) { result in
             switch result {
             case let .success(params, response):
-                guard let postsArray = params?.dictionary?["posts"] as? [[String: Any]] else { return }
-                let decoder = JSONDecoder()
+                guard let postsArray = params?.dictionary?["posts"] as? [[String: String]] else { return }
 
-                let posts = postsArray.flatMap { post -> Post? in
-                    let data = try! JSONSerialization.data(withJSONObject: post)
-                    let post = try! decoder.decode(Post.self, from: data)
-
-                    return post
+                let posts = postsArray.flatMap { postJSON -> Post? in
+                    return Post(json: postJSON, context: LocalStorage.backgroundContext)
                 }
 
-                DispatchQueue.main.async {
-                    completion(posts)
+                try! LocalStorage.saveBackgroundContext()
+            case let .failure(params, response, error):
+                break
+            }
+        }
+    }
+
+    func getAll() {
+        let path = self.authenticatedPath(for: "/v1/posts/all")
+
+        self.teapot.get(path) { result in
+            switch result {
+            case let .success(params, response):
+                guard let postsArray = params?.array as? [[String: String]] else { return }
+
+                let posts = postsArray.flatMap { postJSON -> Post? in
+                    return Post(json: postJSON, context: LocalStorage.backgroundContext)
                 }
+
+                try! LocalStorage.saveBackgroundContext()
             case let .failure(params, response, error):
                 break
             }

@@ -15,10 +15,11 @@
 		9F7AC5CE2029DA1100D4D2E4 /* RecentTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F7AC5CD2029DA1100D4D2E4 /* RecentTableCell.xib */; };
 		9F7AC5D02029DFBF00D4D2E4 /* Font+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7AC5CF2029DFBF00D4D2E4 /* Font+Theme.swift */; };
 		9F7AC5D22029E08C00D4D2E4 /* SweetSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF7F7DE2029B6BD00FA8500 /* SweetSwift.framework */; };
+		9F7AC5D42029E9AA00D4D2E4 /* SearchResultsUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7AC5D32029E9AA00D4D2E4 /* SearchResultsUpdater.swift */; };
+		9F7AC5D62029EEA800D4D2E4 /* LocalStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7AC5D52029EEA800D4D2E4 /* LocalStorage.swift */; };
 		9FF7F7B62029B36200FA8500 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF7F7B52029B36200FA8500 /* AppDelegate.swift */; };
-		9FF7F7B92029B36200FA8500 /* pinboard_ios.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9FF7F7B72029B36200FA8500 /* pinboard_ios.xcdatamodeld */; };
-		9FF7F7BB2029B36200FA8500 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF7F7BA2029B36200FA8500 /* MasterViewController.swift */; };
-		9FF7F7BD2029B36200FA8500 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF7F7BC2029B36200FA8500 /* DetailViewController.swift */; };
+		9FF7F7B92029B36200FA8500 /* Pinboard.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9FF7F7B72029B36200FA8500 /* Pinboard.xcdatamodeld */; };
+		9FF7F7BB2029B36200FA8500 /* RecentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF7F7BA2029B36200FA8500 /* RecentViewController.swift */; };
 		9FF7F7C02029B36200FA8500 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FF7F7BE2029B36200FA8500 /* Main.storyboard */; };
 		9FF7F7C22029B36200FA8500 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FF7F7C12029B36200FA8500 /* Assets.xcassets */; };
 		9FF7F7C52029B36200FA8500 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FF7F7C32029B36200FA8500 /* LaunchScreen.storyboard */; };
@@ -47,11 +48,12 @@
 		9F7AC5CB2029D9F300D4D2E4 /* RecentTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentTableCell.swift; sourceTree = "<group>"; };
 		9F7AC5CD2029DA1100D4D2E4 /* RecentTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecentTableCell.xib; sourceTree = "<group>"; };
 		9F7AC5CF2029DFBF00D4D2E4 /* Font+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Theme.swift"; sourceTree = "<group>"; };
+		9F7AC5D32029E9AA00D4D2E4 /* SearchResultsUpdater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsUpdater.swift; sourceTree = "<group>"; };
+		9F7AC5D52029EEA800D4D2E4 /* LocalStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorage.swift; sourceTree = "<group>"; };
 		9FF7F7B22029B36200FA8500 /* pinboard-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "pinboard-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FF7F7B52029B36200FA8500 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FF7F7B82029B36200FA8500 /* pinboard_ios.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = pinboard_ios.xcdatamodel; sourceTree = "<group>"; };
-		9FF7F7BA2029B36200FA8500 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
-		9FF7F7BC2029B36200FA8500 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		9FF7F7BA2029B36200FA8500 /* RecentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentViewController.swift; sourceTree = "<group>"; };
 		9FF7F7BF2029B36200FA8500 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9FF7F7C12029B36200FA8500 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9FF7F7C42029B36200FA8500 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -94,7 +96,9 @@
 			children = (
 				9F7AC5C12029B7A500D4D2E4 /* PinboardAPIClient.swift */,
 				9F7AC5C92029D54800D4D2E4 /* Post.swift */,
+				9F7AC5D32029E9AA00D4D2E4 /* SearchResultsUpdater.swift */,
 				9F7AC5CF2029DFBF00D4D2E4 /* Font+Theme.swift */,
+				9F7AC5D52029EEA800D4D2E4 /* LocalStorage.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -131,8 +135,7 @@
 				9F7AC5C02029B79000D4D2E4 /* Models */,
 				9FF7F7B52029B36200FA8500 /* AppDelegate.swift */,
 				9F7AC5C32029B99900D4D2E4 /* LoginViewController.swift */,
-				9FF7F7BA2029B36200FA8500 /* MasterViewController.swift */,
-				9FF7F7BC2029B36200FA8500 /* DetailViewController.swift */,
+				9FF7F7BA2029B36200FA8500 /* RecentViewController.swift */,
 				9F7AC5CB2029D9F300D4D2E4 /* RecentTableCell.swift */,
 				9F7AC5CD2029DA1100D4D2E4 /* RecentTableCell.xib */,
 				9FF7F7DB2029B6B400FA8500 /* Frameworks */,
@@ -157,7 +160,7 @@
 				9FF7F7C12029B36200FA8500 /* Assets.xcassets */,
 				9FF7F7C32029B36200FA8500 /* LaunchScreen.storyboard */,
 				9FF7F7C62029B36200FA8500 /* Info.plist */,
-				9FF7F7B72029B36200FA8500 /* pinboard_ios.xcdatamodeld */,
+				9FF7F7B72029B36200FA8500 /* Pinboard.xcdatamodeld */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -302,14 +305,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F7AC5C42029B99900D4D2E4 /* LoginViewController.swift in Sources */,
+				9F7AC5D62029EEA800D4D2E4 /* LocalStorage.swift in Sources */,
+				9F7AC5D42029E9AA00D4D2E4 /* SearchResultsUpdater.swift in Sources */,
 				9F7AC5CC2029D9F300D4D2E4 /* RecentTableCell.swift in Sources */,
-				9FF7F7B92029B36200FA8500 /* pinboard_ios.xcdatamodeld in Sources */,
+				9FF7F7B92029B36200FA8500 /* Pinboard.xcdatamodeld in Sources */,
 				9F7AC5C22029B7A500D4D2E4 /* PinboardAPIClient.swift in Sources */,
 				9FF7F7B62029B36200FA8500 /* AppDelegate.swift in Sources */,
-				9FF7F7BB2029B36200FA8500 /* MasterViewController.swift in Sources */,
+				9FF7F7BB2029B36200FA8500 /* RecentViewController.swift in Sources */,
 				9F7AC5CA2029D54800D4D2E4 /* Post.swift in Sources */,
 				9F7AC5D02029DFBF00D4D2E4 /* Font+Theme.swift in Sources */,
-				9FF7F7BD2029B36200FA8500 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -571,13 +575,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		9FF7F7B72029B36200FA8500 /* pinboard_ios.xcdatamodeld */ = {
+		9FF7F7B72029B36200FA8500 /* Pinboard.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				9FF7F7B82029B36200FA8500 /* pinboard_ios.xcdatamodel */,
 			);
 			currentVersion = 9FF7F7B82029B36200FA8500 /* pinboard_ios.xcdatamodel */;
-			path = pinboard_ios.xcdatamodeld;
+			path = Pinboard.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
