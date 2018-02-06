@@ -12,7 +12,6 @@
 		9F7AC5C82029C9BD00D4D2E4 /* KeychainSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F7AC5C72029C9BC00D4D2E4 /* KeychainSwift.framework */; };
 		9F7AC5CA2029D54800D4D2E4 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7AC5C92029D54800D4D2E4 /* Post.swift */; };
 		9F7AC5CC2029D9F300D4D2E4 /* RecentTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7AC5CB2029D9F300D4D2E4 /* RecentTableCell.swift */; };
-		9F7AC5CE2029DA1100D4D2E4 /* RecentTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F7AC5CD2029DA1100D4D2E4 /* RecentTableCell.xib */; };
 		9F7AC5D02029DFBF00D4D2E4 /* Font+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7AC5CF2029DFBF00D4D2E4 /* Font+Theme.swift */; };
 		9F7AC5D22029E08C00D4D2E4 /* SweetSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF7F7DE2029B6BD00FA8500 /* SweetSwift.framework */; };
 		9F7AC5D42029E9AA00D4D2E4 /* SearchResultsUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7AC5D32029E9AA00D4D2E4 /* SearchResultsUpdater.swift */; };
@@ -46,7 +45,6 @@
 		9F7AC5C72029C9BC00D4D2E4 /* KeychainSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KeychainSwift.framework; path = Carthage/Build/iOS/KeychainSwift.framework; sourceTree = SOURCE_ROOT; };
 		9F7AC5C92029D54800D4D2E4 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		9F7AC5CB2029D9F300D4D2E4 /* RecentTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentTableCell.swift; sourceTree = "<group>"; };
-		9F7AC5CD2029DA1100D4D2E4 /* RecentTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecentTableCell.xib; sourceTree = "<group>"; };
 		9F7AC5CF2029DFBF00D4D2E4 /* Font+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Theme.swift"; sourceTree = "<group>"; };
 		9F7AC5D32029E9AA00D4D2E4 /* SearchResultsUpdater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsUpdater.swift; sourceTree = "<group>"; };
 		9F7AC5D52029EEA800D4D2E4 /* LocalStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorage.swift; sourceTree = "<group>"; };
@@ -132,14 +130,13 @@
 		9FF7F7B42029B36200FA8500 /* pinboard-ios */ = {
 			isa = PBXGroup;
 			children = (
-				9F7AC5C02029B79000D4D2E4 /* Models */,
 				9FF7F7B52029B36200FA8500 /* AppDelegate.swift */,
 				9F7AC5C32029B99900D4D2E4 /* LoginViewController.swift */,
 				9FF7F7BA2029B36200FA8500 /* RecentViewController.swift */,
 				9F7AC5CB2029D9F300D4D2E4 /* RecentTableCell.swift */,
-				9F7AC5CD2029DA1100D4D2E4 /* RecentTableCell.xib */,
-				9FF7F7DB2029B6B400FA8500 /* Frameworks */,
+				9F7AC5C02029B79000D4D2E4 /* Models */,
 				9FF7F7DA2029B6AB00FA8500 /* Resources */,
+				9FF7F7DB2029B6B400FA8500 /* Frameworks */,
 			);
 			path = "pinboard-ios";
 			sourceTree = "<group>";
@@ -262,7 +259,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FF7F7C52029B36200FA8500 /* LaunchScreen.storyboard in Resources */,
-				9F7AC5CE2029DA1100D4D2E4 /* RecentTableCell.xib in Resources */,
 				9FF7F7C22029B36200FA8500 /* Assets.xcassets in Resources */,
 				9FF7F7C02029B36200FA8500 /* Main.storyboard in Resources */,
 			);
