@@ -85,10 +85,12 @@ class PinboardAPIClient {
                 guard let postsArray = params?.dictionary?["posts"] as? [[String: String]] else { return }
 
                 let posts = postsArray.flatMap { postJSON -> Post? in
-                    return Post(json: postJSON, context: LocalStorage.backgroundContext)
+                    return Post(json: postJSON, context: LocalStorage.context)
                 }
 
-                try! LocalStorage.saveBackgroundContext()
+                DispatchQueue.main.async {
+                    try? LocalStorage.save
+                }
             case let .failure(params, response, error):
                 break
             }
@@ -104,13 +106,14 @@ class PinboardAPIClient {
                 guard let postsArray = params?.array as? [[String: String]] else { return }
 
                 let posts = postsArray.flatMap { postJSON -> Post? in
-                    return Post(json: postJSON, context: LocalStorage.backgroundContext)
+                    return Post(json: postJSON, context: LocalStorage.context)
                 }
 
-                try! LocalStorage.saveBackgroundContext()
+                DispatchQueue.main.async {
+                    try? LocalStorage.save()
+                }
             case let .failure(params, response, error):
-                break
-            }
+                print(error)            }
         }
     }
 }

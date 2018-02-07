@@ -9,6 +9,6 @@ class SearchResultsUpdater: NSObject, UISearchResultsUpdating {
             return
         }
 
-        PinboardAPIClient.shared
+
     }
 }

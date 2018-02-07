@@ -6,22 +6,19 @@ import CoreData
 final class RecentViewController: UIViewController {
     @IBOutlet var tableView: UITableView!
 
-    private let searchResultsUpdater = SearchResultsUpdater()
+    // private let searchResultsUpdater = SearchResultsUpdater()
 
-    lazy var fetchedResultsController: NSFetchedResultsController<Post> = {
+    lazy var defaultFetchRequest: NSFetchRequest<Post> = {
         let fetchRequest: NSFetchRequest<Post> = Post.fetchRequest()
-
-        // Set the batch size to a suitable number.
-        fetchRequest.fetchBatchSize = 120
-
-        // Edit the sort key as appropriate.
+        fetchRequest.fetchBatchSize = 50
         let sortDescriptor = NSSortDescriptor(key: "time", ascending: false)
-
         fetchRequest.sortDescriptors = [sortDescriptor]
 
-        // Edit the section name key path and cache name if appropriate.
-        // nil for section name key path means "no sections".
-        let aFetchedResultsController = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: LocalStorage.context, sectionNameKeyPath: nil, cacheName: "Master")
+        return fetchRequest
+    }()
+
+    lazy var fetchedResultsController: NSFetchedResultsController<Post> = {
+        let aFetchedResultsController = NSFetchedResultsController(fetchRequest: self.defaultFetchRequest, managedObjectContext: LocalStorage.context, sectionNameKeyPath: nil, cacheName: nil)
         aFetchedResultsController.delegate = self
 
         do {
@@ -38,7 +35,7 @@ final class RecentViewController: UIViewController {
         super.viewDidLoad()
 
         let searchController = UISearchController(searchResultsController: nil)
-        searchController.searchResultsUpdater = self.searchResultsUpdater
+        searchController.searchResultsUpdater = self
         self.navigationItem.searchController = searchController
 
         self.tableView.register(RecentTableCell.self)
@@ -59,7 +56,9 @@ final class RecentViewController: UIViewController {
         if PinboardAPIClient.shared.authToken == nil {
             self.performSegue(withIdentifier: "presentLogin", sender: self)
         } else {
-            PinboardAPIClient.shared.getAll()
+            PinboardAPIClient.shared.getRecent({ (_) in
+                
+            })
         }
     }
 }
@@ -110,5 +109,15 @@ extension RecentViewController: UITableViewDataSource, UITableViewDelegate {
 extension RecentViewController: NSFetchedResultsControllerDelegate {
     func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
         self.tableView.reloadData()
+    }
+}
+
+extension RecentViewController: UISearchResultsUpdating {
+    func updateSearchResults(for searchController: UISearchController) {
+        guard let searchTerm = searchController.searchBar.text, !searchTerm.isEmpty else {
+            return
+        }
+
+//        self.searchPredicate = NSPredicate(format: "postDescription like %@", searchTerm)
     }
 }

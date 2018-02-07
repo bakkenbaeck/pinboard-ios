@@ -92,6 +92,7 @@
 		9F7AC5C02029B79000D4D2E4 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				9FF7F7B72029B36200FA8500 /* Pinboard.xcdatamodeld */,
 				9F7AC5C12029B7A500D4D2E4 /* PinboardAPIClient.swift */,
 				9F7AC5C92029D54800D4D2E4 /* Post.swift */,
 				9F7AC5D32029E9AA00D4D2E4 /* SearchResultsUpdater.swift */,
@@ -157,7 +158,6 @@
 				9FF7F7C12029B36200FA8500 /* Assets.xcassets */,
 				9FF7F7C32029B36200FA8500 /* LaunchScreen.storyboard */,
 				9FF7F7C62029B36200FA8500 /* Info.plist */,
-				9FF7F7B72029B36200FA8500 /* Pinboard.xcdatamodeld */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
