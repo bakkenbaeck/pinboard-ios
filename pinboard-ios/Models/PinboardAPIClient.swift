@@ -116,4 +116,26 @@ class PinboardAPIClient {
                 print(error)            }
         }
     }
+
+    func addBookmark(urlPath: String, description: String) {
+        let path = self.authenticatedPath(for: "/v1/posts/add")
+        let params = RequestParameter([
+            "url" : urlPath,
+            "description": description
+            ])
+
+        self.teapot.post(path, parameters: params) { result in
+            DispatchQueue.main.async {
+                switch result {
+                case let .success(params, response):
+                    print(params)
+                    print(response)
+                case let .failure(params, response, error):
+                    print(params)
+                    print(response)
+                    print(error)
+                }
+            }
+        }
+    }
 }

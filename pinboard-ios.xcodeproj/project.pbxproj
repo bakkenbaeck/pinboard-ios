@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F465C71202B58D100A3B4A3 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F465C70202B58D100A3B4A3 /* ShareViewController.swift */; };
+		9F465C74202B58D100A3B4A3 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F465C72202B58D100A3B4A3 /* MainInterface.storyboard */; };
+		9F465C79202B58D100A3B4A3 /* Add to Pinboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9F465C6E202B58D100A3B4A3 /* Add to Pinboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		9F7AC5C22029B7A500D4D2E4 /* PinboardAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7AC5C12029B7A500D4D2E4 /* PinboardAPIClient.swift */; };
 		9F7AC5C42029B99900D4D2E4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7AC5C32029B99900D4D2E4 /* LoginViewController.swift */; };
 		9F7AC5C82029C9BD00D4D2E4 /* KeychainSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F7AC5C72029C9BC00D4D2E4 /* KeychainSwift.framework */; };
@@ -16,6 +19,13 @@
 		9F7AC5D22029E08C00D4D2E4 /* SweetSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF7F7DE2029B6BD00FA8500 /* SweetSwift.framework */; };
 		9F7AC5D42029E9AA00D4D2E4 /* SearchResultsUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7AC5D32029E9AA00D4D2E4 /* SearchResultsUpdater.swift */; };
 		9F7AC5D62029EEA800D4D2E4 /* LocalStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7AC5D52029EEA800D4D2E4 /* LocalStorage.swift */; };
+		9FE7C6FA205AA7C900C39915 /* PinboardAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7AC5C12029B7A500D4D2E4 /* PinboardAPIClient.swift */; };
+		9FE7C6FB205AA84600C39915 /* Teapot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF7F7DC2029B6BD00FA8500 /* Teapot.framework */; };
+		9FE7C6FC205AA88A00C39915 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7AC5C92029D54800D4D2E4 /* Post.swift */; };
+		9FE7C6FD205AA88E00C39915 /* LocalStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7AC5D52029EEA800D4D2E4 /* LocalStorage.swift */; };
+		9FE7C6FF205AA89C00C39915 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE7C6FE205AA89B00C39915 /* CoreData.framework */; };
+		9FE7C700205AA95D00C39915 /* Pinboard.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9FF7F7B72029B36200FA8500 /* Pinboard.xcdatamodeld */; };
+		9FE7C703205AAB9300C39915 /* KeychainSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F7AC5C72029C9BC00D4D2E4 /* KeychainSwift.framework */; };
 		9FF7F7B62029B36200FA8500 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF7F7B52029B36200FA8500 /* AppDelegate.swift */; };
 		9FF7F7B92029B36200FA8500 /* Pinboard.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9FF7F7B72029B36200FA8500 /* Pinboard.xcdatamodeld */; };
 		9FF7F7BB2029B36200FA8500 /* RecentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF7F7BA2029B36200FA8500 /* RecentViewController.swift */; };
@@ -30,6 +40,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		9F465C76202B58D100A3B4A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9FF7F7AA2029B36200FA8500 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F465C6D202B58D100A3B4A3;
+			remoteInfo = "Add to Pinboard";
+		};
 		9FF7F7CC2029B36200FA8500 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9FF7F7AA2029B36200FA8500 /* Project object */;
@@ -39,7 +56,25 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		9F465C78202B58D100A3B4A3 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				9F465C79202B58D100A3B4A3 /* Add to Pinboard.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		9F465C6E202B58D100A3B4A3 /* Add to Pinboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Add to Pinboard.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F465C70202B58D100A3B4A3 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		9F465C73202B58D100A3B4A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		9F465C75202B58D100A3B4A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F7AC5C12029B7A500D4D2E4 /* PinboardAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinboardAPIClient.swift; sourceTree = "<group>"; };
 		9F7AC5C32029B99900D4D2E4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9F7AC5C72029C9BC00D4D2E4 /* KeychainSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KeychainSwift.framework; path = Carthage/Build/iOS/KeychainSwift.framework; sourceTree = SOURCE_ROOT; };
@@ -48,6 +83,9 @@
 		9F7AC5CF2029DFBF00D4D2E4 /* Font+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Theme.swift"; sourceTree = "<group>"; };
 		9F7AC5D32029E9AA00D4D2E4 /* SearchResultsUpdater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsUpdater.swift; sourceTree = "<group>"; };
 		9F7AC5D52029EEA800D4D2E4 /* LocalStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorage.swift; sourceTree = "<group>"; };
+		9FE7C6FE205AA89B00C39915 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		9FE7C701205AAB0000C39915 /* Add to Pinboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Add to Pinboard.entitlements"; sourceTree = "<group>"; };
+		9FE7C702205AAB1200C39915 /* pinboard-ios.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "pinboard-ios.entitlements"; sourceTree = "<group>"; };
 		9FF7F7B22029B36200FA8500 /* pinboard-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "pinboard-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FF7F7B52029B36200FA8500 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FF7F7B82029B36200FA8500 /* pinboard_ios.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = pinboard_ios.xcdatamodel; sourceTree = "<group>"; };
@@ -66,6 +104,16 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		9F465C6B202B58D100A3B4A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FE7C6FF205AA89C00C39915 /* CoreData.framework in Frameworks */,
+				9FE7C6FB205AA84600C39915 /* Teapot.framework in Frameworks */,
+				9FE7C703205AAB9300C39915 /* KeychainSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9FF7F7AF2029B36200FA8500 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -89,6 +137,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9F465C6F202B58D100A3B4A3 /* Add to Pinboard */ = {
+			isa = PBXGroup;
+			children = (
+				9FE7C701205AAB0000C39915 /* Add to Pinboard.entitlements */,
+				9F465C70202B58D100A3B4A3 /* ShareViewController.swift */,
+				9F465C72202B58D100A3B4A3 /* MainInterface.storyboard */,
+				9F465C75202B58D100A3B4A3 /* Info.plist */,
+			);
+			path = "Add to Pinboard";
+			sourceTree = "<group>";
+		};
 		9F7AC5C02029B79000D4D2E4 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +164,7 @@
 		9F7AC5D12029E08C00D4D2E4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9FE7C6FE205AA89B00C39915 /* CoreData.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -112,6 +172,7 @@
 		9FF7F7A92029B36200FA8500 = {
 			isa = PBXGroup;
 			children = (
+				9F465C6F202B58D100A3B4A3 /* Add to Pinboard */,
 				9FF7F7B42029B36200FA8500 /* pinboard-ios */,
 				9FF7F7CE2029B36200FA8500 /* pinboard-iosTests */,
 				9FF7F7B32029B36200FA8500 /* Products */,
@@ -124,6 +185,7 @@
 			children = (
 				9FF7F7B22029B36200FA8500 /* pinboard-ios.app */,
 				9FF7F7CB2029B36200FA8500 /* pinboard-iosTests.xctest */,
+				9F465C6E202B58D100A3B4A3 /* Add to Pinboard.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -131,6 +193,7 @@
 		9FF7F7B42029B36200FA8500 /* pinboard-ios */ = {
 			isa = PBXGroup;
 			children = (
+				9FE7C702205AAB1200C39915 /* pinboard-ios.entitlements */,
 				9FF7F7B52029B36200FA8500 /* AppDelegate.swift */,
 				9F7AC5C32029B99900D4D2E4 /* LoginViewController.swift */,
 				9FF7F7BA2029B36200FA8500 /* RecentViewController.swift */,
@@ -177,6 +240,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		9F465C6D202B58D100A3B4A3 /* Add to Pinboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F465C7A202B58D100A3B4A3 /* Build configuration list for PBXNativeTarget "Add to Pinboard" */;
+			buildPhases = (
+				9F465C6A202B58D100A3B4A3 /* Sources */,
+				9F465C6B202B58D100A3B4A3 /* Frameworks */,
+				9F465C6C202B58D100A3B4A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Add to Pinboard";
+			productName = "Add to Pinboard";
+			productReference = 9F465C6E202B58D100A3B4A3 /* Add to Pinboard.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		9FF7F7B12029B36200FA8500 /* pinboard-ios */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9FF7F7D42029B36200FA8500 /* Build configuration list for PBXNativeTarget "pinboard-ios" */;
@@ -185,10 +265,12 @@
 				9FF7F7AF2029B36200FA8500 /* Frameworks */,
 				9FF7F7B02029B36200FA8500 /* Resources */,
 				9FF7F7E42029B6C500FA8500 /* Carthage copy frameworks */,
+				9F465C78202B58D100A3B4A3 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				9F465C77202B58D100A3B4A3 /* PBXTargetDependency */,
 			);
 			name = "pinboard-ios";
 			productName = "pinboard-ios";
@@ -223,9 +305,29 @@
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Bakken & Bæck";
 				TargetAttributes = {
+					9F465C6D202B58D100A3B4A3 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
+					};
 					9FF7F7B12029B36200FA8500 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 					9FF7F7CA2029B36200FA8500 = {
 						CreatedOnToolsVersion = 9.2;
@@ -249,11 +351,20 @@
 			targets = (
 				9FF7F7B12029B36200FA8500 /* pinboard-ios */,
 				9FF7F7CA2029B36200FA8500 /* pinboard-iosTests */,
+				9F465C6D202B58D100A3B4A3 /* Add to Pinboard */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		9F465C6C202B58D100A3B4A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F465C74202B58D100A3B4A3 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9FF7F7B02029B36200FA8500 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -296,6 +407,18 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		9F465C6A202B58D100A3B4A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FE7C700205AA95D00C39915 /* Pinboard.xcdatamodeld in Sources */,
+				9FE7C6FC205AA88A00C39915 /* Post.swift in Sources */,
+				9FE7C6FD205AA88E00C39915 /* LocalStorage.swift in Sources */,
+				9FE7C6FA205AA7C900C39915 /* PinboardAPIClient.swift in Sources */,
+				9F465C71202B58D100A3B4A3 /* ShareViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9FF7F7AE2029B36200FA8500 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -324,6 +447,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		9F465C77202B58D100A3B4A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9F465C6D202B58D100A3B4A3 /* Add to Pinboard */;
+			targetProxy = 9F465C76202B58D100A3B4A3 /* PBXContainerItemProxy */;
+		};
 		9FF7F7CD2029B36200FA8500 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 9FF7F7B12029B36200FA8500 /* pinboard-ios */;
@@ -332,6 +460,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		9F465C72202B58D100A3B4A3 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9F465C73202B58D100A3B4A3 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		9FF7F7BE2029B36200FA8500 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -351,6 +487,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		9F465C7B202B58D100A3B4A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Add to Pinboard/Add to Pinboard.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 29X3GG489T;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "Add to Pinboard/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "no.bakkenbaeck.pinboard-ios.Add-to-Pinboard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9F465C7C202B58D100A3B4A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Add to Pinboard/Add to Pinboard.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 29X3GG489T;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "Add to Pinboard/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "no.bakkenbaeck.pinboard-ios.Add-to-Pinboard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		9FF7F7D22029B36200FA8500 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -461,7 +637,9 @@
 		9FF7F7D52029B36200FA8500 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "pinboard-ios/pinboard-ios.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 29X3GG489T;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -480,7 +658,9 @@
 		9FF7F7D62029B36200FA8500 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "pinboard-ios/pinboard-ios.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 29X3GG489T;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -541,6 +721,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		9F465C7A202B58D100A3B4A3 /* Build configuration list for PBXNativeTarget "Add to Pinboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F465C7B202B58D100A3B4A3 /* Debug */,
+				9F465C7C202B58D100A3B4A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		9FF7F7AD2029B36200FA8500 /* Build configuration list for PBXProject "pinboard-ios" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
